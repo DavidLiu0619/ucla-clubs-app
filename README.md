@@ -5,24 +5,36 @@
 
 This Shiny application helps UCLA students discover and explore student organizations based on their interests. The app provides interactive visualizations and search capabilities to make club discovery easier and more intuitive.
 
+There are three urls can access this app:
+
+1. Shinyapp: https://hengyuanliu.shinyapps.io/uclaclubs/
+2. Google Cloud Run: https://ucla-clubs-app-980752141572.us-west1.run.app
+3. My own domain: https://uclaclubs.hyl.gd.edu.kg/
+
+The web app structures is using the two API I created and deploied by Google Cloud Run, you can check the detail by these Githubs:
+
+1. KNN API Github: https://github.com/DavidLiu0619/ucla-clubs-knn-api
+2. Gemini+RAG API Github: https://github.com/DavidLiu0619/ucla-clubs-rag-api
+
 ## Features
 
-- **Club Search**: Search for clubs by keywords, categories, or descriptions
 - **Interactive Visualizations**:
-  - Word cloud showing common themes across clubs
-  - Bar plots showing club distribution by categories
-  - Dynamic data filtering and exploration
-- **Club Details**: View detailed information about each club including:
-  - Description
-  - Contact information
-  - Meeting times and locations
-  - Membership requirements
+  - The user can select multiple Club Categories, and it will show:
+    - Bar plots showing club distribution by categories
+    - Bar plots of the most common words
+    - Word cloud showing common themes across clubs
+- **KNN Similarity Club Finder**:
+  - The user can input the keywords and number of results
+    - The table includes: Name of Clubs, Category, Clickable Link, and Similarity Score
+- **Club Chatbot**: 
+  - An AI Agent based on RAG Framework and Gemini API
+  - The user can ask questions, and the chatbot can answer.
 
 ## Repository Structure
 
 | File/Directory | Description |
 |----------------|-------------|
-| `code/` | Contains the main Shiny application code |
+| `code/` | Contains the Webscrapping and EDA code |
 | `docker/` | Docker configuration files and setup scripts |
 | `.dockerignore` | Specifies which files Docker should ignore |
 | `deploy-to-shinyapps.R` | Script for deploying to shinyapps.io |
@@ -60,11 +72,9 @@ The application can be deployed to shinyapps.io using the provided `deploy-to-sh
 
 ## Data Source
 
-The application uses cleaned and processed data from the UCLA Student Organizations database, providing information about registered student clubs and organizations at UCLA.
+The application uses cleaned and processed data from the UCLA Student Organizations database: https://community.ucla.edu/studentorgs
+Note: The data is webscrapped on April 27, 2025, so the data might different while you seeing now. 
 
-## Contributing
-
-Feel free to submit issues and enhancement requests!
 
 ## License
 
