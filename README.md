@@ -75,7 +75,6 @@ The application can be deployed to shinyapps.io using the provided `deploy-to-sh
 The application uses cleaned and processed data from the UCLA Student Organizations database: https://community.ucla.edu/studentorgs
 Note: The data is webscrapped on April 27, 2025, so the data might different while you seeing now. 
 
-
 ## License
 
 This project is licensed under the terms of the license included in the repository.
