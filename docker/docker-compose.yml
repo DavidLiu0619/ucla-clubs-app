@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  shiny:
+    container_name: shiny
+    platform: "linux/amd64"
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/srv/shiny-server
+    restart: unless-stopped
+    environment:
+      - PORT=8080
+      - SHINY_LOG_LEVEL=DEBUG
+      - R_LIBS_USER=/usr/local/lib/R/site-library

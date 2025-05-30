@@ -1,0 +1,9 @@
+.git
+.gitignore
+.RData
+.Rhistory
+.DS_Store
+Rplots.pdf
+README.md
+code/
+proposal/ 
