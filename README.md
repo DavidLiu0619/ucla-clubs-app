@@ -65,7 +65,7 @@ cd docker
 docker compose up -d
 ```
 
-3. Access the application at `http://localhost:3838`
+3. Access the application at `http://localhost:8080`
 
 4. Stop Docker:
 ```bash
