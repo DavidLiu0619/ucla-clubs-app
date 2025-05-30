@@ -57,14 +57,20 @@ The web app structures is using the two API I created and deploied by Google Clo
 ```bash
 git clone https://github.com/DavidLiu0619/ucla_clubs_app.git
 cd ucla_clubs_app
+cd docker
 ```
 
 2. Build and run using Docker:
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 3. Access the application at `http://localhost:3838`
+
+4. Stop Docker:
+```bash
+docker compose down -v
+```
 
 ## Deployment
 
