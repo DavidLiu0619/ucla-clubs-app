@@ -16,6 +16,19 @@ The web app structures is using the two API I created and deploied by Google Clo
 1. KNN API Github: https://github.com/DavidLiu0619/ucla-clubs-knn-api
 2. Gemini+RAG API Github: https://github.com/DavidLiu0619/ucla-clubs-rag-api
 
+## Data Source
+
+The application uses cleaned and processed data from the UCLA Student Organizations database: https://community.ucla.edu/studentorgs
+Note: The data is webscrapped on April 27, 2025, so the data might be different while you seeing now. 
+
+## Exploratory Data Analysis
+
+| Metric             | Count  |
+|--------------------|--------|
+| Total Categories   | 48     |
+| Total Club Records | 2,829  |
+| Unique Clubs       | 1,439  |
+
 ## Features
 
 - **Interactive Visualizations**:
@@ -57,23 +70,24 @@ The web app structures is using the two API I created and deploied by Google Clo
 ```bash
 git clone https://github.com/DavidLiu0619/ucla_clubs_app.git
 cd ucla_clubs_app
+cd docker
 ```
 
 2. Build and run using Docker:
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
-3. Access the application at `http://localhost:3838`
+3. Access the application at `http://localhost:8080`
+
+4. Stop Docker:
+```bash
+docker compose down -v
+```
 
 ## Deployment
 
 The application can be deployed to shinyapps.io using the provided `deploy-to-shinyapps.R` script.
-
-## Data Source
-
-The application uses cleaned and processed data from the UCLA Student Organizations database: https://community.ucla.edu/studentorgs
-Note: The data is webscrapped on April 27, 2025, so the data might different while you seeing now. 
 
 ## License
 
