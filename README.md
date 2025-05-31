@@ -29,6 +29,13 @@ Note: The data is webscrapped on April 27, 2025, so the data might be different 
 | Total Club Records | 2,829  |
 | Unique Clubs       | 1,439  |
 
+### Distribution of Clubs by Category
+![Bar Plot of Club Categories](assests/bar_plots.png)
+
+### Demo Video
+https://github.com/DavidLiu0619/ucla-clubs-app/raw/main/assests/short_demo.mp4
+
+
 ## Features
 
 - **Interactive Visualizations**:
