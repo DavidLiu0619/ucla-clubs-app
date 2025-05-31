@@ -32,14 +32,15 @@ Note: The data is webscrapped on April 27, 2025, so the data might be different 
 ### Distribution of Clubs by Category
 ![Bar Plot of Club Categories](assests/bar_plots.png)
 
-### Demo Video
-https://github.com/DavidLiu0619/ucla-clubs-app/assets/short_demo.mp4?raw=true
 
 <video src="assests/short_demo.mp4" controls="controls" style="max-width: 730px;">
 </video>
 
 
 ## Features
+
+### Demo Video
+[https://github.com/DavidLiu0619/ucla-clubs-app/assets/short_demo.mp4?raw=true](https://github.com/user-attachments/assets/13da64fd-984d-4a29-a0fe-8f9d0ab5b7b7)
 
 - **Interactive Visualizations**:
   - The user can select multiple Club Categories, and it will show:
