@@ -39,7 +39,6 @@ Note: The data is webscrapped on April 27, 2025, so the data might be different 
 
 ## Features
 
-### Demo Video
 [https://github.com/DavidLiu0619/ucla-clubs-app/assets/short_demo.mp4?raw=true](https://github.com/user-attachments/assets/13da64fd-984d-4a29-a0fe-8f9d0ab5b7b7)
 
 - **Interactive Visualizations**:
