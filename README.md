@@ -33,7 +33,10 @@ Note: The data is webscrapped on April 27, 2025, so the data might be different 
 ![Bar Plot of Club Categories](assests/bar_plots.png)
 
 ### Demo Video
-https://github.com/DavidLiu0619/ucla-clubs-app/raw/main/assests/short_demo.mp4
+https://github.com/DavidLiu0619/ucla-clubs-app/assets/short_demo.mp4?raw=true
+
+<video src="assests/short_demo.mp4" controls="controls" style="max-width: 730px;">
+</video>
 
 
 ## Features
