@@ -11,8 +11,12 @@ There are three URLs that can access this app:
 2. Google Cloud Run: https://ucla-clubs-app-980752141572.us-west1.run.app
 3. My own domain: https://uclaclubs.hyl.gd.edu.kg/
 
-The web app structure uses the two APIs I created and deployed by Google Cloud Run, you can check the details on these GitHub:
+## 🧠 API Infrastructure
+
+This web app integrates **two custom APIs** I developed and deployed via **Google Cloud Run**. You can view the full implementation on GitHub and test them with the provided `curl` commands.
+
 ---
+
 ### KNN API Github: https://github.com/DavidLiu0619/ucla-clubs-knn-api
 A fast and lightweight API using **TF-IDF** and **K-Nearest Neighbors** to find similar UCLA clubs based on keyword input.
 **Test with:**
