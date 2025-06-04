@@ -37,7 +37,7 @@ curl -X POST "https://ucla-clubs-rag-api-980752141572.us-central1.run.app/ask" -
 ## Data Source
 
 The application uses cleaned and processed data from the UCLA Student Organizations database: https://community.ucla.edu/studentorgs
-Note: The data is webscrapped on April 27, 2025, so the data might be different while you seeing now. (You can refer the folder '/code/webscrapping.ipynb' in this repo.
+Note: The data is webscrapped on April 27, 2025, so the data might be different while you seeing now. (You can refer the folder `/code/webscrapping.ipynb` in this repo).
 
 ## Exploratory Data Analysis
 
