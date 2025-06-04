@@ -5,16 +5,30 @@
 
 This Shiny application helps UCLA students discover and explore student organizations based on their interests. The app provides interactive visualizations and search capabilities to make club discovery easier and more intuitive.
 
-There are three urls can access this app:
+There are three URLs that can access this app:
 
 1. Shinyapp: https://hengyuanliu.shinyapps.io/uclaclubs/
 2. Google Cloud Run: https://ucla-clubs-app-980752141572.us-west1.run.app
 3. My own domain: https://uclaclubs.hyl.gd.edu.kg/
 
-The web app structures is using the two API I created and deploied by Google Cloud Run, you can check the detail by these Githubs:
+The web app structure uses the two APIs I created and deployed by Google Cloud Run, you can check the details on these GitHub:
+---
+### KNN API Github: https://github.com/DavidLiu0619/ucla-clubs-knn-api
+A fast and lightweight API using **TF-IDF** and **K-Nearest Neighbors** to find similar UCLA clubs based on keyword input.
+**Test with:**
+```bash
+curl -X POST "https://ucla-clubs-knn-980752141572.us-central1.run.app/predict_clubs" -H "Content-Type: application/json" -d '{"query": "machine learning artificial intelligence", "top": 4}'
+```
 
-1. KNN API Github: https://github.com/DavidLiu0619/ucla-clubs-knn-api
-2. Gemini+RAG API Github: https://github.com/DavidLiu0619/ucla-clubs-rag-api
+### Gemini+RAG API Github: https://github.com/DavidLiu0619/ucla-clubs-rag-api
+A Retrieval-Augmented Generation (RAG) API that uses **LangChain**, **ChromaDB**, and **Gemini Flash** to answer natural-language questions about UCLA clubs.  
+It converts CSV data into vectorized documents, retrieves the most relevant entries, and generates contextual answers using Gemini.
+**Test with:**
+```bash
+curl -X POST "https://ucla-clubs-rag-api-980752141572.us-central1.run.app/ask" -H "Content-Type: application/json" -d '{"question":"I am a freshman student. Can you recommend some UCLA clubs?"}'
+```
+
+
 
 ## Data Source
 
@@ -61,6 +75,7 @@ Note: The data is webscrapped on April 27, 2025, so the data might be different 
 | `docker/` | Docker configuration files and setup scripts |
 | `.dockerignore` | Specifies which files Docker should ignore |
 | `deploy-to-shinyapps.R` | Script for deploying to shinyapps.io |
+| `assets/` | figures and presentation slides |
 
 ## Local Development
 
