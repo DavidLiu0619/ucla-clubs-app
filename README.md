@@ -19,7 +19,7 @@ The web app structures is using the two API I created and deploied by Google Clo
 ## Data Source
 
 The application uses cleaned and processed data from the UCLA Student Organizations database: https://community.ucla.edu/studentorgs
-Note: The data is webscrapped on April 27, 2025, so the data might be different while you seeing now. 
+Note: The data is webscrapped on April 27, 2025, so the data might be different while you seeing now. (You can refer the folder '/code/webscrapping.ipynb' in this repo.
 
 ## Exploratory Data Analysis
 
@@ -97,7 +97,10 @@ docker compose down -v
 
 ## Deployment
 
-The application can be deployed to shinyapps.io using the provided `deploy-to-shinyapps.R` script.
+The application can be deployed to 
+* shinyapps.io using the provided `deploy-to-shinyapps.R` script.
+* Google Cloud Run
+
 
 ## License
 
