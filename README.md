@@ -11,7 +11,7 @@ There are three URLs that can access this app:
 2. Google Cloud Run: https://ucla-clubs-app-980752141572.us-west1.run.app
 3. My own domain: https://uclaclubs.hyl.gd.edu.kg/
 
-## 🧠 API Infrastructure
+## API Infrastructure
 
 This web app integrates **two custom APIs** I developed and deployed via **Google Cloud Run**. You can view the full implementation on GitHub and test them with the provided `curl` commands.
 
